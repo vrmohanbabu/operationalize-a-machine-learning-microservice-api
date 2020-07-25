@@ -8,15 +8,16 @@ In this project, you are given a pre-trained, `sklearn` model that has been trai
 
 ## Setup the Environment
 
+* Environment used is Ubuntu16 in cloud9.
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
 
 ### Install Minikube through docker
 
-`curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \&& chmod +x minikube`
-`sudo mkdir -p /usr/local/bin/`
-`sudo install minikube /usr/local/bin/`
-`minikube start --driver=docker`
+* `curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \&& chmod +x minikube`
+* `sudo mkdir -p /usr/local/bin/`
+* `sudo install minikube /usr/local/bin/`
+* `minikube start --driver=docker`
 
 ### Install hadolint:
 
@@ -25,13 +26,13 @@ In this project, you are given a pre-trained, `sklearn` model that has been trai
             
 ### Install kubectl:
 
-`sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
+* `sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list`
-`sudo apt-get update`
-`sudo apt-get install -y kubectl`
-`snap install kubectl --classic`
-`kubectl version --client`
+* `sudo apt-get update`
+* `sudo apt-get install -y kubectl`
+* `snap install kubectl --classic`
+* `kubectl version --client`
 
 ### Running `app.py`
 
