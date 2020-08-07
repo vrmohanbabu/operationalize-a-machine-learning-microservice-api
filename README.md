@@ -38,8 +38,8 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
-4. Upload to Docker Hub: `./upload_docker.sh`
+3. Upload to Docker Hub: `./upload_docker.sh`
+4. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
 
